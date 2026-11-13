@@ -20,8 +20,8 @@ studio13-sample/
 헤더 → 히어로 → `#sheet` → `#instant`(어두운 바탕) → `#info` → `#visit` → 푸터 + 모바일 `.quick`(nav).
 
 ## 링크 한곳 정리
-- 카카오톡(예약 · 주 버튼) `https://pf.kakao.com/_xblFvK`: 헤더 · 히어로 · 시트 마지막 칸 · Info 가격 · 문의 카드 · 하단 바
-- 네이버 플레이스 `m.place.naver.com/place/1662992653/home`: 히어로 · Info 가격 카드 · 하단 바
+- 카카오톡(예약 · 주 버튼) `https://pf.kakao.com/_xblFvK`: 헤더 · 히어로 · 시트 마지막 칸 · Info 가격 · 문의 카드 · 하단 바 · JSON-LD sameAs
+- 네이버 플레이스 `m.place.naver.com/place/1662992653/home`: 히어로 · 하단 바 · JSON-LD sameAs
 - 네이버 길찾기 `map.naver.com/p/entry/place/1662992653`: Visit
 - 인스타 `https://www.instagram.com/studio13_profile/`: 히어로 · Visit · 푸터
 - 전화 `tel:050713448356`: Info · Visit · 푸터 · 하단 바
