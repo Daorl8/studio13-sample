@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>studio13 스튜디오13 | 청주 증명사진 · 프로필 사진관</title>
+<meta name="description" content="청주 상당구 사진관 studio13. 증명사진과 프로필 사진, 인스턴트 컷. 매일 10:00~20:00. 충북 청주시 상당구 상당로115번길 26 2층." />
+<link rel="canonical" href="https://studio13-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="studio13" />
+<meta property="og:title" content="studio13 · 청주 증명사진 · 프로필 사진관" />
+<meta property="og:description" content="한 컷 한 컷, 나다운 얼굴로. 청주 상당구 studio13. 매일 10:00~20:00." />
+<meta property="og:url" content="https://studio13-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://studio13-sample.lgt3232.workers.dev/og-s13.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#F2F2F2" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = studio13-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "additionalType": "https://schema.org/LocalBusiness",
+  "name": "studio13 스튜디오13",
+  "url": "https://studio13-sample.lgt3232.workers.dev/",
+  "image": "https://studio13-sample.lgt3232.workers.dev/og-s13.jpg",
+  "telephone": "+82-507-1344-8356",
+  "address": { "@type": "PostalAddress", "streetAddress": "상당로115번길 26 2층", "addressLocality": "청주시 상당구", "addressRegion": "충청북도", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "20:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/studio13_profile/"]
+}
+</script>
+<style>
+@font-face{ font-family:"S13 Display"; font-weight:400 700; font-display:swap; src:url("s13-outfit.woff2") format("woff2"); }
+@font-face{ font-family:"S13 Mono"; font-weight:400; font-display:swap; src:url("s13-dmmono.woff2") format("woff2"); }
+@font-face{ font-family:"S13 Kr"; font-weight:400 700; font-display:swap; src:url("s13-pretendard.woff2") format("woff2"); }
+
+:root{
+  --bg:#F2F2F2;
+  --white:#FFFFFF;
+  --ink:#2C2C2C;
+  --soft:#646464;
+  --line:#D9D9D9;
+  --dark:#1F1F1F;
+  --dark-ink:#F2F2F2;
+  --dark-soft:#ABABAB;
+  --r:2px;
+  --sans:"S13 Display","S13 Kr",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --kr:"S13 Kr","S13 Display",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"S13 Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{ font-family:var(--kr); color:var(--ink); background:var(--bg); line-height:1.65; font-size:16px; -webkit-font-smoothing:antialiased; word-break:keep-all; overflow-wrap:anywhere; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+.dark :focus-visible{ outline-color:var(--dark-ink); }
+.wrap{ width:min(100% - 40px, 1180px); margin-inline:auto; }
+.mono{ font-family:var(--mono); font-size:.76rem; letter-spacing:.08em; text-transform:uppercase; font-variant-numeric:tabular-nums; }
+
+/* 헤더 */
+.top{ position:sticky; top:0; z-index:50; background:rgba(242,242,242,.94); border-bottom:1px solid var(--line); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px); }
+.top .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:60px; }
+.brand img{ width:112px; height:auto; }
+.nav{ display:none; gap:28px; font-family:var(--sans); font-size:.92rem; }
+.nav a{ text-decoration:none; color:var(--soft); }
+.top .btn{ min-height:40px; padding:0 16px; font-size:.86rem; }
+@media (min-width:900px){ .nav{ display:flex; } }
+@media (max-width:899px){ .top .btn{ display:none; } }
+@media (hover:hover){ .nav a:hover{ color:var(--ink); } }
+
+/* 버튼 */
+.btn{ display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:0 22px; border:1px solid var(--ink); border-radius:var(--r); text-decoration:none; font-weight:600; font-size:.95rem; transition:background-color .2s, color .2s, transform .1s; }
+.btn.fill{ background:var(--ink); color:var(--white); }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:hover{ background:var(--ink); color:var(--white); } .btn.fill:hover{ background:#474747; } }
+
+/* 섹션 공통 */
+.sec{ padding:88px 0; }
+.head{ display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 24px; margin-bottom:36px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+.head h2{ font-family:var(--sans); font-weight:700; font-size:clamp(2rem, 6vw, 3.2rem); line-height:1.05; letter-spacing:-.025em; }
+.head p{ color:var(--soft); }
+.dark .head{ border-color:#3A3A3A; }
+.dark .head p{ color:var(--dark-soft); }
+
+/* 히어로 */
+.hero{ padding:36px 0 80px; }
+.hero-grid{ display:grid; gap:36px; }
+.hero .logo{ width:min(100%, 520px); height:auto; }
+.hero .kind{ font-family:var(--sans); font-size:clamp(1.15rem, 3.4vw, 1.5rem); font-weight:500; margin-top:22px; letter-spacing:-.01em; }
+.hero .lead{ color:var(--soft); margin-top:10px; max-width:26em; }
+.hero .meta{ display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:22px; color:var(--soft); }
+.hero .meta b{ color:var(--ink); font-weight:500; }
+.hero .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+.finder{ position:relative; background:var(--white); border:1px solid var(--line); border-radius:var(--r); padding:18px 18px 14px; }
+.finder .stage{ position:relative; aspect-ratio:4/5; overflow:hidden; background:#E6E6E6; }
+.finder .stage img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transition:opacity .9s ease; }
+.finder .stage img.on{ opacity:1; }
+.finder .corner{ position:absolute; width:22px; height:22px; border-color:var(--ink); border-style:solid; border-width:0; z-index:2; pointer-events:none; }
+.finder .c1{ top:12px; left:12px; border-top-width:2px; border-left-width:2px; }
+.finder .c2{ top:12px; right:12px; border-top-width:2px; border-right-width:2px; }
+.finder .c3{ bottom:12px; left:12px; border-bottom-width:2px; border-left-width:2px; }
+.finder .c4{ bottom:12px; right:12px; border-bottom-width:2px; border-right-width:2px; }
+.finder .bar{ display:flex; justify-content:space-between; align-items:center; margin-top:12px; color:var(--soft); }
+.finder .dot{ display:inline-block; width:7px; height:7px; border-radius:50%; background:#C83A3A; margin-right:8px; vertical-align:middle; }
+@media (min-width:900px){
+  .hero{ padding:56px 0 100px; }
+  .hero-grid{ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); align-items:center; gap:64px; }
+  .finder{ max-width:460px; justify-self:end; width:100%; }
+}
+
+/* 컨택트 시트 */
+.sheet{ background:var(--white); }
+.grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px 12px; }
+.frame figure{ aspect-ratio:4/5; overflow:hidden; background:#E6E6E6; border-radius:var(--r); }
+.frame img{ width:100%; height:100%; object-fit:cover; transition:transform .4s ease; }
+.frame .no{ display:flex; justify-content:space-between; margin-top:8px; color:var(--soft); }
+.frame.you{ display:flex; flex-direction:column; }
+.frame.you .box{ aspect-ratio:4/5; display:flex; flex-direction:column; justify-content:space-between; padding:18px; border:1px dashed #9A9A9A; border-radius:var(--r); text-decoration:none; background:var(--bg); }
+.frame.you .box strong{ font-family:var(--sans); font-size:clamp(1.3rem, 4vw, 1.7rem); font-weight:600; line-height:1.2; letter-spacing:-.01em; }
+.frame.you .box span{ color:var(--soft); font-size:.9rem; }
+@media (hover:hover){ .frame figure:hover img{ transform:scale(1.03); } .frame.you .box:hover{ border-color:var(--ink); } }
+@media (min-width:640px){ .grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } }
+@media (min-width:1000px){ .grid{ grid-template-columns:repeat(5, minmax(0,1fr)); gap:24px 16px; } }
+
+/* 인스턴트 */
+.dark{ background:var(--dark); color:var(--dark-ink); }
+.inst-grid{ display:grid; gap:16px; }
+.inst-grid figure{ overflow:hidden; border-radius:var(--r); }
+.inst-grid .big{ aspect-ratio:959/1000; }
+.inst-grid .big img{ width:100%; height:100%; object-fit:cover; }
+.inst-row{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:10px; }
+.inst-row img{ width:100%; height:auto; }
+.inst-note{ grid-column:1 / -1; color:var(--dark-soft); margin-top:8px; font-size:.92rem; }
+@media (min-width:900px){
+  .inst-grid{ grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); align-items:center; gap:32px; }
+  .inst-row{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px; align-items:end; }
+  .inst-note{ grid-column:auto; margin:0; padding:0 0 8px 4px; align-self:end; }
+}
+
+/* 안내 */
+.info-grid{ display:grid; gap:12px; }
+.card{ background:var(--white); border:1px solid var(--line); border-radius:var(--r); padding:24px 22px; }
+.card .mono{ color:var(--soft); }
+.card h3{ font-family:var(--sans); font-size:1.3rem; font-weight:600; margin-top:10px; letter-spacing:-.01em; }
+.card p{ color:var(--soft); margin-top:8px; font-size:.95rem; }
+.card .btn{ margin-top:18px; }
+@media (min-width:900px){ .info-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; } }
+
+/* 오시는 길 */
+.visit-grid{ display:grid; gap:28px; }
+.dl{ display:grid; border-top:1px solid var(--line); }
+.dl > div{ display:grid; grid-template-columns:76px minmax(0,1fr); gap:14px; padding:16px 0; border-bottom:1px solid var(--line); }
+.dl dt{ color:var(--soft); padding-top:3px; }
+.dl dd{ font-variant-numeric:tabular-nums; }
+.dl dd small{ display:block; color:var(--soft); font-size:.86rem; margin-top:2px; }
+.dl a{ text-decoration:underline; text-underline-offset:3px; }
+.visit .cta{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:22px; }
+.visit .cta .btn:first-child{ grid-column:1 / -1; }
+.map{ width:100%; height:280px; border:0; border-radius:var(--r); background:#E0E0E0; display:block; }
+@media (min-width:768px){ .visit .cta{ display:flex; flex-wrap:wrap; } }
+@media (min-width:900px){ .visit-grid{ grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:48px; align-items:stretch; } .map{ height:100%; min-height:380px; } }
+
+/* 푸터 */
+.foot{ border-top:1px solid var(--line); padding:52px 0 120px; color:var(--soft); font-size:.88rem; }
+.foot img{ width:120px; margin-bottom:18px; }
+.foot p + p{ margin-top:6px; }
+@media (min-width:900px){ .foot{ padding-bottom:52px; } }
+
+/* 하단 바 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--white); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--ink); border-radius:var(--r); font-size:.88rem; font-weight:600; text-decoration:none; }
+.quick a.fill{ background:var(--ink); color:var(--white); }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 나타나기 */
+.js .reveal{ opacity:0; transform:translateY(14px); transition:opacity .7s ease var(--d,0s), transform .7s ease var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{ opacity:1; transform:none; transition:none; }
+  html{ scroll-behavior:auto; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="studio13 처음으로"><img src="s13-logo.svg" alt="studio13" width="112" height="21" /></a>
+    <nav class="nav" aria-label="섹션">
+      <a href="#sheet">Portfolio</a>
+      <a href="#instant">Instant</a>
+      <a href="#info">Info</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 class="reveal"><img class="logo" src="s13-logo.svg" alt="studio13" width="520" height="98" fetchpriority="high" /></h1>
+        <p class="kind reveal">증명사진 · 프로필 · 인스턴트</p>
+        <p class="lead reveal">한 컷 한 컷, 가장 나다운 얼굴로. 청주 상당구 사진관 스튜디오13이에요.</p>
+        <p class="meta reveal"><span><b>매일</b> 10:00–20:00</span><span>상당로115번길 26 2층</span></p>
+        <div class="cta reveal">
+          <a class="btn fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+          <a class="btn" href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <div class="finder reveal" aria-label="스튜디오13 촬영 사진 슬라이드">
+        <div class="stage">
+          <img class="on" src="s13-p01.webp" alt="밝은 회색 배경 앞, 긴 갈색 머리 여성의 프로필 사진" width="800" height="1000" />
+          <img src="s13-p03.webp" alt="검은 티셔츠를 입은 남성의 프로필 사진" width="800" height="1000" loading="lazy" />
+          <img src="s13-p02.webp" alt="검은 홀터넥 상의를 입은 여성의 프로필 사진" width="800" height="1000" loading="lazy" />
+          <img src="s13-p06.webp" alt="흰 니트 상의를 입은 웨이브 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" />
+          <img src="s13-p04.webp" alt="흰 오프숄더 상의를 입은 여성의 프로필 사진" width="800" height="1000" loading="lazy" />
+          <span class="corner c1" aria-hidden="true"></span><span class="corner c2" aria-hidden="true"></span><span class="corner c3" aria-hidden="true"></span><span class="corner c4" aria-hidden="true"></span>
+        </div>
+        <div class="bar mono" aria-hidden="true"><span><span class="dot"></span>studio13</span><span class="count">01 / 05</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sheet" id="sheet" aria-labelledby="sheet-h">
+    <div class="wrap">
+      <div class="head reveal"><h2 id="sheet-h">Contact sheet</h2><p>스튜디오13에서 찍은 사진들</p></div>
+      <div class="grid">
+        <div class="frame reveal"><figure><img src="s13-p01.webp" alt="긴 갈색 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>01</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p02.webp" alt="검은 홀터넥 상의 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>02</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p03.webp" alt="검은 티셔츠 남성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>03</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p04.webp" alt="흰 오프숄더 상의 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>04</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p05.webp" alt="앞머리가 있는 긴 검은 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>05</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p06.webp" alt="흰 니트 상의 웨이브 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>06</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p07.webp" alt="흰 끈 상의 갈색 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>07</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p08.webp" alt="검은 레이스 상의 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>08</span></p></div>
+        <div class="frame reveal"><figure><img src="s13-p09.webp" alt="흰 가디건을 입은 긴 웨이브 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>09</span></p></div>
+        <div class="frame you reveal">
+          <a class="box" href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener"><strong>다음 컷은<br />당신 차례</strong><span>더 많은 사진은 인스타그램에서</span></a>
+          <p class="no mono"><span>13A</span><span>10</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="instant" aria-labelledby="inst-h">
+    <div class="wrap">
+      <div class="head reveal"><h2 id="inst-h">Instant</h2><p>필름 한 장처럼 남기는 컷</p></div>
+      <div class="inst-grid">
+        <figure class="big reveal"><img src="s13-inst1.webp" alt="검은 배경 위에 놓인 남성 네 명의 인스턴트 사진" width="959" height="1000" loading="lazy" /></figure>
+        <div class="inst-side">
+          <div class="inst-row">
+            <figure class="reveal"><img src="s13-inst2.webp" alt="턱을 괸 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
+            <figure class="reveal"><img src="s13-inst3.webp" alt="고개를 숙여 웃는 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
+            <figure class="reveal"><img src="s13-inst4.webp" alt="정면을 보는 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
+            <p class="inst-note reveal">흰 테두리 안에 담긴 한 장. 스튜디오13 인스타그램에 올라온 인스턴트 컷이에요.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="info" aria-labelledby="info-h">
+    <div class="wrap">
+      <div class="head reveal"><h2 id="info-h">Info</h2><p>촬영 전에 확인해 주세요</p></div>
+      <div class="info-grid">
+        <article class="card reveal">
+          <span class="mono">01 · Hours</span>
+          <h3>매일 10:00–20:00</h3>
+          <p>평일과 주말 모두 같은 시간이에요.</p>
+        </article>
+        <article class="card reveal">
+          <span class="mono">02 · Price</span>
+          <h3>촬영 종류와 가격</h3>
+          <p>네이버 플레이스와 인스타그램에서 확인해 주세요.</p>
+          <a class="btn" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+        </article>
+        <article class="card reveal">
+          <span class="mono">03 · Contact</span>
+          <h3>문의</h3>
+          <p>전화나 인스타그램 메시지로 편하게 물어봐 주세요.</p>
+          <a class="btn" href="tel:050713448356">0507-1344-8356</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sheet visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal"><h2 id="visit-h">Visit</h2><p>오시는 길</p></div>
+      <div class="visit-grid">
+        <div class="reveal">
+          <dl class="dl">
+            <div><dt>주소</dt><dd>충북 청주시 상당구 상당로115번길 26 2층</dd></div>
+            <div><dt>영업</dt><dd>매일 10:00–20:00</dd></div>
+            <div><dt>전화</dt><dd><a href="tel:050713448356">0507-1344-8356</a></dd></div>
+            <div><dt>인스타</dt><dd><a href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">@studio13_profile</a></dd></div>
+          </dl>
+          <div class="cta">
+            <a class="btn fill" href="https://map.naver.com/p/entry/place/1662992653" target="_blank" rel="noopener">네이버 길찾기</a>
+            <a class="btn" href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">인스타그램</a>
+            <a class="btn" href="tel:050713448356">전화</a>
+          </div>
+        </div>
+        <iframe class="map reveal" title="studio13 위치 지도" src="https://www.google.com/maps?q=%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%EC%83%81%EB%8B%B9%EA%B5%AC%20%EC%83%81%EB%8B%B9%EB%A1%9C115%EB%B2%88%EA%B8%B8%2026&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="s13-logo.svg" alt="" width="120" height="23" loading="lazy" />
+    <p>스튜디오13 · 증명사진 · 프로필 · 인스턴트</p>
+    <p>충북 청주시 상당구 상당로115번길 26 2층 · <a href="tel:050713448356">0507-1344-8356</a> · <a href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">@studio13_profile</a></p>
+    <p>© studio13</p>
+  </div>
+</footer>
+
+<nav class="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+  <a href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">인스타그램</a>
+  <a href="tel:050713448356">전화</a>
+</nav>
+
+<script>
+(function(){
+  /* 뷰파인더 슬라이드 (setInterval) */
+  var imgs=[].slice.call(document.querySelectorAll('.finder .stage img')), cnt=document.querySelector('.finder .count'), i=0, n=imgs.length;
+  function pad(x){ return (x<10?'0':'')+x; }
+  if(n>1){
+    setInterval(function(){
+      imgs[i].classList.remove('on'); i=(i+1)%n; imgs[i].classList.add('on');
+      if(cnt){ cnt.textContent=pad(i+1)+' / '+pad(n); }
+    },2800);
+  }
+
+  /* 나타나기 */
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1 && !el.style.getPropertyValue('--d')){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),4)*0.06)+'s'); }
+  });
+  function showAll(){ pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; }
+  function start(){
+    var t=setInterval(function(){
+      if(!pending.length){ clearInterval(t); return; }
+      if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){ showAll(); return; }
+      var line=window.innerHeight*0.92;
+      pending=pending.filter(function(el){
+        if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+        return true;
+      });
+    },120);
+  }
+  var started=false; function go(){ if(started) return; started=true; start(); }
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(go); }
+  setTimeout(go,1200);
+  setTimeout(function(){ document.querySelectorAll('.hero .reveal').forEach(function(el){ el.classList.add('in'); }); },1600);
+})();
+</script>
+</body>
+</html>
