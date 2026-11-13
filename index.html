@@ -127,7 +127,8 @@ a{ color:inherit; }
 .frame.you .box strong{ font-family:var(--sans); font-size:clamp(1.3rem, 4vw, 1.7rem); font-weight:600; line-height:1.2; letter-spacing:-.01em; }
 .frame.you .box span{ color:var(--soft); font-size:.9rem; }
 @media (hover:hover){ .frame figure:hover img{ transform:scale(1.03); } .frame.you .box:hover{ border-color:var(--ink); } }
-@media (min-width:640px){ .grid{ grid-template-columns:repeat(3, minmax(0,1fr)); } }
+@media (min-width:768px){ .grid{ grid-template-columns:repeat(5, minmax(0,1fr)); gap:18px 10px; } .frame.you .box{ padding:12px; } .frame.you .box strong{ font-size:clamp(1rem, 2.1vw, 1.7rem); } .frame.you .box span{ font-size:.8rem; } }
+.nw{ white-space:nowrap; }
 @media (min-width:1000px){ .grid{ grid-template-columns:repeat(5, minmax(0,1fr)); gap:24px 16px; } }
 
 /* 인스턴트 */
@@ -202,7 +203,7 @@ a{ color:inherit; }
       <a href="#info">Info</a>
       <a href="#visit">Visit</a>
     </nav>
-    <a class="btn fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+    <a class="btn fill" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener">카카오톡 예약</a>
   </div>
 </header>
 
@@ -215,7 +216,8 @@ a{ color:inherit; }
         <p class="lead reveal">한 컷 한 컷, 가장 나다운 얼굴로. 청주 상당구 사진관 스튜디오13이에요.</p>
         <p class="meta reveal"><span><b>매일</b> 10:00–20:00</span><span>상당로115번길 26 2층</span></p>
         <div class="cta reveal">
-          <a class="btn fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+          <a class="btn fill" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener">카카오톡 예약</a>
+          <a class="btn" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
           <a class="btn" href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">인스타그램</a>
         </div>
       </div>
@@ -292,8 +294,11 @@ a{ color:inherit; }
         <article class="card reveal">
           <span class="mono">03 · Contact</span>
           <h3>문의</h3>
-          <p>전화나 인스타그램 메시지로 편하게 물어봐 주세요.</p>
-          <a class="btn" href="tel:050713448356">0507-1344-8356</a>
+          <p>카카오톡이나 전화로 편하게 물어봐 주세요.</p>
+          <div class="btns">
+            <a class="btn" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener">카카오톡</a>
+            <a class="btn" href="tel:050713448356">전화</a>
+          </div>
         </article>
       </div>
     </div>
@@ -305,7 +310,7 @@ a{ color:inherit; }
       <div class="visit-grid">
         <div class="reveal">
           <dl class="dl">
-            <div><dt>주소</dt><dd>충북 청주시 상당구 상당로115번길 26 2층</dd></div>
+            <div><dt>주소</dt><dd>충북 청주시 상당구 상당로115번길 <span class="nw">26 2층</span></dd></div>
             <div><dt>영업</dt><dd>매일 10:00–20:00</dd></div>
             <div><dt>전화</dt><dd><a href="tel:050713448356">0507-1344-8356</a></dd></div>
             <div><dt>인스타</dt><dd><a href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">@studio13_profile</a></dd></div>
@@ -332,8 +337,8 @@ a{ color:inherit; }
 </footer>
 
 <nav class="quick" aria-label="빠른 연결">
-  <a class="fill" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
-  <a href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener">인스타그램</a>
+  <a class="fill" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener">카카오톡 예약</a>
+  <a href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버</a>
   <a href="tel:050713448356">전화</a>
 </nav>
 
