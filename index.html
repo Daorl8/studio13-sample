@@ -152,6 +152,8 @@ a{ color:inherit; }
 .card h3{ font-family:var(--sans); font-size:1.3rem; font-weight:600; margin-top:10px; letter-spacing:-.01em; }
 .card p{ color:var(--soft); margin-top:8px; font-size:.95rem; }
 .card .btn{ margin-top:18px; }
+.card .btns{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px; margin-top:18px; }
+.card .btns .btn{ margin-top:0; padding:0 12px; }
 @media (min-width:900px){ .info-grid{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px; } }
 
 /* 오시는 길 */
@@ -245,7 +247,7 @@ a{ color:inherit; }
         <div class="frame reveal"><figure><img src="s13-p08.webp" alt="검은 레이스 상의 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>08</span></p></div>
         <div class="frame reveal"><figure><img src="s13-p09.webp" alt="흰 가디건을 입은 긴 웨이브 머리 여성의 프로필 사진" width="800" height="1000" loading="lazy" /></figure><p class="no mono"><span>13A</span><span>09</span></p></div>
         <div class="frame you reveal">
-          <a class="box" href="https://www.instagram.com/studio13_profile/" target="_blank" rel="noopener"><strong>다음 컷은<br />당신 차례</strong><span>더 많은 사진은 인스타그램에서</span></a>
+          <a class="box" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener"><strong>카카오톡으로<br />예약하기</strong><span>스튜디오13 카카오톡 채널로 연결돼요</span></a>
           <p class="no mono"><span>13A</span><span>10</span></p>
         </div>
       </div>
@@ -262,7 +264,7 @@ a{ color:inherit; }
             <figure class="reveal"><img src="s13-inst2.webp" alt="턱을 괸 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
             <figure class="reveal"><img src="s13-inst3.webp" alt="고개를 숙여 웃는 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
             <figure class="reveal"><img src="s13-inst4.webp" alt="정면을 보는 여성의 인스턴트 사진" width="900" height="733" loading="lazy" /></figure>
-            <p class="inst-note reveal">흰 테두리 안에 담긴 한 장. 스튜디오13 인스타그램에 올라온 인스턴트 컷이에요.</p>
+            <p class="inst-note reveal">스튜디오13의 인스턴트 컷이에요.</p>
           </div>
         </div>
       </div>
@@ -276,13 +278,16 @@ a{ color:inherit; }
         <article class="card reveal">
           <span class="mono">01 · Hours</span>
           <h3>매일 10:00–20:00</h3>
-          <p>평일과 주말 모두 같은 시간이에요.</p>
+          <p>평일과 주말 모두 같은 시간에 운영합니다.</p>
         </article>
         <article class="card reveal">
           <span class="mono">02 · Price</span>
           <h3>촬영 종류와 가격</h3>
-          <p>네이버 플레이스와 인스타그램에서 확인해 주세요.</p>
-          <a class="btn" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+          <p>네이버 플레이스와 카카오톡에서 확인해 주세요.</p>
+          <div class="btns">
+            <a class="btn" href="https://m.place.naver.com/place/1662992653/home" target="_blank" rel="noopener">네이버 플레이스</a>
+            <a class="btn" href="https://pf.kakao.com/_xblFvK" target="_blank" rel="noopener">카카오톡</a>
+          </div>
         </article>
         <article class="card reveal">
           <span class="mono">03 · Contact</span>
